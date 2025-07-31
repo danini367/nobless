@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.flexbox {
+    background-color: blue;
+    width: 400px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.item {
+    background-color: darkblue;
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font: bold 25px "궁서";
+    color: #fff;
+}
+
+#row_reverse {
+    flex-direction: row-reverse;
+}

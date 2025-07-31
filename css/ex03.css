@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.flexbox {
+    background-color: blueviolet;
+    width: 400px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.item {
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font: bold 24px/2 "굴림";
+    margin: 10px;
+}
+
+#colum{
+    flex-direction: column;
+}
+
+#colum_reverse{
+    flex-direction: column-reverse;
+}

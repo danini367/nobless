@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+article{
+    margin: 20px;
+}
+
+.box {
+    border: 4px solid;
+    height: 40vh;
+    font: bold 2em/1 "arial";
+}
+
+.box div:nth-child(1) {
+    background-color: lightblue;
+}
+
+.box div:nth-child(2) {
+    background-color: rgb(145, 201, 221);
+}
+
+.box div:nth-child(3) {
+    background-color: rgb(116, 193, 219);
+}
+
+.box div:nth-child(4) {
+    background-color: rgb(80, 181, 214);
+}
+
+.box div:nth-child(5) {
+    background-color: rgb(51, 186, 231);
+}
+
+.box div:nth-child(6) {
+    background-color: rgb(218, 227, 230);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;     
+}
+
+.flex div{
+    width: 15%;
+}
+
+.flex div:nth-child(2){
+    order: -1;
+}
+
+.flex div:nth-child(1){
+    order: -1;
+}
+
+.flex div:nth-child(5){
+    order: -1;
+}
+
+.colum{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum div{
+    height: calc((100% - 20px * 4 ) / 5)
+}
+
+.colum div:nth-child(5) {
+    order: -1;
+}
+
+.flexwrap{
+    display: flex;
+    /*자녀요소 가변형으로*/
+
+    justify-content: space-between;
+    /*자녀요소의 가로정렬을 양쪽으로 맞춘다*/
+    flex-wrap: wrap;
+    /*자녀요소의 행바꿈을 허용*/
+    align-content: space-between;
+}
+
+.flexwrap div{
+    /*간격을 30px로 설정(상하좌우)*/
+    width: calc((100% - 30px) / 3);
+    height: calc((100% - 30px * 2) / 2 );
+}
